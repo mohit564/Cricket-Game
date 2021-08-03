@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+#team1-score,
+#team2-score {
+  margin: 8px auto;
+  font-size: 2rem;
+}
+
+.timer {
+  order: -1;
+}
+
+.time {
+  margin: 8px auto;
+  font-size: 2.4rem;
+}
+
+.scoreboard {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winner-team {
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+button {
+  background: #56aafe;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-color: #56aafe;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background: #047bfd;
+  border-color: #047bfd;
+  outline: none;
+  cursor: pointer;
+}
+
+button[disabled] {
+  background: rgb(164, 164, 164);
+  border: none;
+  cursor: not-allowed;
+}
+
+@media (min-width: 40rem) {
+  body {
+    font-size: 1rem;
+  }
+  .dashboard {
+    flex-direction: row;
+  }
+  .timer {
+    order: 0;
+  }
+  .scoreboard {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .result {
+    order: 0;
+  }
+}

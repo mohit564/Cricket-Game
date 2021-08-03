@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Mohit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game - Mohit</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>CRICKET 10</h1>
+    </div>
+    <div class="dashboard">
+      <div class="team1-board">
+        <h2>TEAM 1 SCORE</h2>
+        <p id="team1-score">0</p>
+        <button id="team1-hit">HIT 1</button>
+      </div>
+      <div class="timer">
+        <h2>TIMER</h2>
+        <p class="time">60</p>
+      </div>
+      <div class="team2-board">
+        <h2>TEAM 2 SCORE</h2>
+        <p id="team2-score">0</p>
+        <button id="team2-hit" disabled>HIT 2</button>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="team1-scoreboard">
+        <p class="team-scoreboard-title">TEAM 1 SCORE BOARD</p>
+      </div>
+      <div class="result">
+        <button id="resultBtn" disabled>GENERATE RESULT</button>
+        <div class="winner-team">
+          <p>MATCH WON BY</p>
+          <p id="winner-name"></p>
+        </div>
+        <div class="motm">
+          <p>MAN OF THE MATCH</p>
+          <p id="motm-name"></p>
+          <p id="motm-team"></p>
+          <p id="motm-score"></p>
+        </div>
+      </div>
+      <div class="team2-scoreboard">
+        <p id="team-scoreboard-title">TEAM 2 SCORE BOARD</p>
+      </div>
+    </div>
+  </body>
+</html>
