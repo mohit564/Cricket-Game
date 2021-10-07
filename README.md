@@ -1,3 +1,3 @@
 # Cricket-Game
 
-## Hosted on - https://mohit-b25gwd-cricket-game.netlify.app
+## Hosted on - https://cricket-game-by-mohit.netlify.app 
